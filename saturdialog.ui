@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SaturDialog</class>
+ <widget class="QDialog" name="SaturDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>239</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>80</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_9">
+    <item>
+     <widget class="QLabel" name="saturLabel">
+      <property name="text">
+       <string>Satur:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="saturInput"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="confSaturBtn">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>180</y>
+     <width>119</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>confirm</string>
+   </property>
+  </widget>
+  <widget class="QSlider" name="saturSlider">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>114</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>confSaturBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>SaturDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>195</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>119</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

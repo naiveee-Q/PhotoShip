@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HueDialog</class>
+ <widget class="QDialog" name="HueDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>266</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>84</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <widget class="QLabel" name="hueLabel">
+      <property name="text">
+       <string>Hue:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="hueInput"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QSlider" name="hueSlider">
+   <property name="geometry">
+    <rect>
+     <x>73</x>
+     <y>138</y>
+     <width>114</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="confHueBtn">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>170</y>
+     <width>119</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>confirm</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>confHueBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>HueDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>185</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>132</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

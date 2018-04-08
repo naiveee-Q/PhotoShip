@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BrightDialog</class>
+ <widget class="QDialog" name="BrightDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>260</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>80</y>
+     <width>161</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QLabel" name="brightLabel">
+        <property name="text">
+         <string>Bright:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="brightInput"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QSlider" name="brightSlider">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="confBriBtn">
+      <property name="text">
+       <string>confirm</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>confBriBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>BrightDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>130</x>
+     <y>214</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>129</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
